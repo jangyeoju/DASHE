@@ -222,7 +222,7 @@ export default function SubmitForm() {
             </div>
             <div>
               <h2>
-                이름. <span>* 필수</span>
+                이름<span>* 필수</span>
               </h2>
               <input
                 type="text"
@@ -238,7 +238,7 @@ export default function SubmitForm() {
             </div>
             <div>
               <h2>
-                회사. <span>* 필수</span>
+                회사명<span>* 필수</span>
               </h2>
               <input
                 type="text"

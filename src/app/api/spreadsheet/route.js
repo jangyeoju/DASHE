@@ -47,6 +47,8 @@ async function getSheetsClient() {
 export async function appendData({ spreadsheetId, range = 'Sheet1', values }) {
   const sheets = await getSheetsClient();
 
+  console.log({sheets});
+
   return sheets.spreadsheets.values.append({
     spreadsheetId,
     range,

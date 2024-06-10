@@ -1,6 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
+console.log('process.env.SPREADSHEET_CREDENTIALS_JSON')
+console.log(process.env.SPREADSHEET_CREDENTIALS_JSON)
+
+console.log(process.env.SPREADSHEET_CREDENTIALS_JSON.replace(/\\n/g, '\n'))
+
 if (process.env.SPREADSHEET_CREDENTIALS_JSON) {
   fs.writeFileSync(
     path.resolve(process.cwd(), 'spreadsheet-service-account.json'),
